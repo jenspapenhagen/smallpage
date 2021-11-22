@@ -14,23 +14,26 @@ export const ItemList =  ({ records }: ItemListProps)  => {
   
   // Create handleIncrement event handler
   const handleIncrement = () => {
+    scrollTo(0, 0)
     setCount(prevCount => prevCount + STEP_SIDE );
   };
 
   //Create handleDecrement event handler
   const handleDecrement = () => {
+    scrollTo(0, 0)
     setCount(prevCount => prevCount - STEP_SIDE);
   };
-
-  useEffect(() => setHold((count + STEP_SIDE) != MAX ? (count + STEP_SIDE) : MAX), [count, MAX])
-
   const resetCounter = () => {
+    scrollTo(0, 0)
     setCount(0);
   }
 
   const toTheLastCounter = () => {
+    scrollTo(0, 0)
     setCount(MAX - STEP_SIDE);
   }
+
+  useEffect(() => setHold((count + STEP_SIDE) != MAX ? (count + STEP_SIDE) : MAX), [count, MAX])
 
   return (
    <>
@@ -41,11 +44,11 @@ export const ItemList =  ({ records }: ItemListProps)  => {
       .map(record => (<ItemListEntrie item={record} key={record.id} />))} 
     </ul>
     <div className="buttonDiv">
-          <button onClick={resetCounter}  className="bg">to the Start</button>
-          <button onClick={handleDecrement} className="bg">🠔</button>
+          <button onClick={resetCounter} >to the Start</button>
+          <button onClick={handleDecrement}>&#129136;</button>
           <h5> Record {count} of {MAX} </h5>
-          <button onClick={handleIncrement} className="bg">➔</button>
-          <button onClick={toTheLastCounter} className="bg">to the end</button>          
+          <button onClick={handleIncrement} >&#129138;</button>
+          <button onClick={toTheLastCounter}>to the End</button>          
     </div>
     </>
     )};

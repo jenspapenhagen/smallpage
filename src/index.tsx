@@ -4,7 +4,7 @@ import { ItemList } from "./itemList";
 import voicesData from './data.json';
 
 const App = () => (<>
-      <div className="center"><img src="./img/toucan-281491_1280.webp"  width="250" /></div>
+      <div className="center"></div>
       <ItemList records={voicesData.recordings} />
       <br />
       <h5>Data form: <a href="https://www.xeno-canto.org" target="_blank" rel="noreferrer"> xeno-canto</a></h5>
