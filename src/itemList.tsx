@@ -32,8 +32,6 @@ export const ItemList =  ({ records }: ItemListProps)  => {
     setCount(MAX - STEP_SIDE);
   }
 
- 
-
   return (
    <>
     <h2>Liste von Tukan Sounds</h2> 
