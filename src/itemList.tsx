@@ -44,11 +44,11 @@ export const ItemList =  ({ records }: ItemListProps)  => {
       .map(record => (<ItemListEntrie item={record} key={record.id} />))} 
     </ul>
     <div className="buttonDiv">
-          <button onClick={resetCounter} >to the Start</button>
-          <button onClick={handleDecrement}>&#129136;</button>
-          <h5> Record {count} of {MAX} </h5>
-          <button onClick={handleIncrement} >&#129138;</button>
-          <button onClick={toTheLastCounter}>to the End</button>          
+          <button onClick={resetCounter}>&#9198;</button>
+          <button onClick={handleDecrement}>&#9204;</button>
+          <h4> Record {count} of {MAX} </h4>
+          <button onClick={handleIncrement} >&#9205;</button>
+          <button onClick={toTheLastCounter}>&#x23ED;</button>          
     </div>
     </>
     )};
