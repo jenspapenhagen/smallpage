@@ -28,6 +28,10 @@ export const ItemList =  ({ records }: ItemListProps)  => {
     setCount(0);
   }
 
+  const toTheLastCounter = () => {
+    setCount(MAX - STEP_SIDE);
+  }
+
  
 
   return (
@@ -39,10 +43,11 @@ export const ItemList =  ({ records }: ItemListProps)  => {
       .map(record => (<ItemListEntrie item={record} key={record.id} />))} 
     </ul>
     <div className="buttonDiv">
+          <button onClick={resetCounter}  className="bg">to the Start</button>
           <button onClick={handleDecrement} className="bg">🠔</button>
-          <h5> Record Count is {MAX} </h5>
+          <h5> Record {count} of {MAX} </h5>
           <button onClick={handleIncrement} className="bg">➔</button>
-          <button onClick={resetCounter}>Reset</button>
+          <button onClick={toTheLastCounter} className="bg">to the end</button>          
     </div>
     </>
     )};
