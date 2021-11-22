@@ -1,2 +1,2 @@
-# smallpage
-playing round with Typescript and webpack
+# react-typescript-eslint-webpack
+Webpack template for a React app with TypeScript and ESLint
