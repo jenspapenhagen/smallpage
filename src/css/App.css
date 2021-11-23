@@ -1,92 +1,103 @@
 * {
-	margin: 0;
-	color: rgb(56, 56, 56);
-  }
-  
-  #root {
-		max-width: 1000px;
-		padding: 20px;
-	margin: auto;
-  }
-  
-  body {
-	  background-color: rgb(136, 221, 193);
-  }
-  
-  h2 {
-	font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
-	  margin: 0;
-	  padding: 0;
-  }
-  
-  ul {
-	list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-  }
-  
-  li {
-	  font: 80 20px/1.5 Helvetica, Verdana, sans-serif;
-	  border-bottom: 1px solid rgb(39, 39, 39);
-	  padding: 15px 0px;
-  }
-  
-  li:last-child {
-	border: none;
-  }
-  
-  li p::first-line {	
-	  font-weight: bold;
-  }
-  
-  li a {
-	  text-decoration: none;
-	  color: #000;
-	  display: block;
-	  width: 80%;
-	  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  transition: font-size 0.3s ease, background-color 0.3s ease;
-  }
-  
-  li a:hover {
-	  font-size: 30px;
-	  background: #f6f6f6;
-  }
-  
-  button {
-	  color: rgb(56, 56, 56);
-	  font-size: 1.3rem;
-	  margin-top: 8px;
-	  padding: 3px 5px 8px;
-  }
-  
-  .center {
-	  max-height: 500px;
-	  width: 100%;
-	  height: 50vw;
-	  background-image: url("../img/toucan-281491_1280.webp");
-	  background-size: cover;
-	  text-align: center;
-	  border: 3px solid rgb(56, 56, 56);
-	  margin-bottom: 20px;
-  }
-  
-  .buttonDiv {
-	  display: flex;
-	  flex-direction: row;
-	  align-items: center;
-	  
-  }
+    margin: 0;
+    color: rgb(56, 56, 56);
+}
 
-  .buttonDiv button {
-	margin: 0 5px;
-  }
-  .buttonDiv h5 {
-	margin: 0 20px;
-  }
+#root {
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(136, 221, 193);
+}
+
+h2 {
+    font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font: 80 40px/1.5 Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font: 80 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    padding: 12px 0px;
+}
+
+li:last-child {
+    border: none;
+}
+
+li p::first-line {
+    font-weight: bold;
+}
+
+li p small {
+    font-size: 10pt;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 80%;
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+li a:hover {
+    font-size: 30px;
+    background: #f6f6f6;
+}
+
+button {
+    color: rgb(56, 56, 56);
+    font-size: 1.5rem;
+    margin-top: 8px;
+    padding: 4px 4px 5px 6px;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+.center {
+    max-height: 500px;
+    width: 100%;
+    height: 50vw;
+    background-image: url("../img/toucan-281491_1280.webp");
+    background-size: cover;
+    text-align: center;
+    border: 3px solid rgb(56, 56, 56);
+    margin-bottom: 20px;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttonDiv button {
+    margin: 0 5px;
+}
+
+.buttonDiv h5 {
+    margin: 0 20px;
+}
   
   
   
