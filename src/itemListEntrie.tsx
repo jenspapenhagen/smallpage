@@ -22,8 +22,8 @@ export const ItemListEntrie = ({ item }: ItemListEntrieProps) => {
         <li key={id}>
             <p>Record: {en}<br />{lat && ('in Latitude: ' + lat + ' und Longitude: ' + lng)} </p>
             <p><small>(with Length: {length})</small></p>
-            <button><BsFillPlayFill  onClick={playAudio} /> Play</button>
-            <button ><BsPauseFill onClick={pauseAudio}/> Pause</button>
+            <button onClick={playAudio}><BsFillPlayFill/> Play</button>
+            <button onClick={pauseAudio}><BsPauseFill/> Pause</button>
         </li>
     );
 };

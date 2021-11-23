@@ -45,11 +45,11 @@ export const ItemList = ({ records }: ItemListProps) => {
                     .map(record => (<ItemListEntrie item={record} key={record.id} />))}
             </ul>
             <div className='buttonDiv'>
-                <button><BsChevronBarLeft onClick={resetCounter} /></button>
-                <button ><BsChevronCompactLeft onClick={handleDecrement} /></button>
+                <button onClick={resetCounter} ><BsChevronBarLeft/></button>
+                <button onClick={handleDecrement} ><BsChevronCompactLeft/></button>
                 <h4> Record {count} of {MAX} </h4>
-                <button><BsChevronCompactRight  onClick={handleIncrement}/></button>
-                <button><BsChevronBarRight  onClick={toTheLastCounter}/></button>
+                <button onClick={handleIncrement}><BsChevronCompactRight/></button>
+                <button onClick={toTheLastCounter}><BsChevronBarRight/></button>
             </div>
         </>
     );
