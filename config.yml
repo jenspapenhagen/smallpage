@@ -1,0 +1,6 @@
+backend:
+  domain: www.xeno-canto.org
+  protocol: https
+  path: api/2/recordings
+parameter:
+  - query
