@@ -6,7 +6,7 @@ require_once "spyc.php";
 $file = 'config.yml';
 $data = Spyc::YAMLLoad($file);
 if ($data === NULL || $data === false) {
-    throw new WFException("Error processing YAML file: {$file}");
+    throw new Exception("Error processing YAML file: {$file}");
 }
 //building URL for the target
 $protocol = $data['backend']['protocol'];
@@ -20,7 +20,7 @@ $fullURL = $protocol . '://'. $domain .'/'.  $path . '?'. $data['parameter'][0];
 //get input form react frontend
 $firstParameterAsString = $data['parameter'][0];
 if ($firstParameterAsString === NULL){
-    throw new WFException("Error processing GET Parameter");
+    throw new Exception("Error processing GET Parameter");
 }
 $q = urlencode($_GET[$firstParameterAsString]);//Need to url encode
 
