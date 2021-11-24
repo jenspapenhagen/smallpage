@@ -6,7 +6,7 @@ import { Birdvoices } from './api/parser';
 const App = () => {
     const [voicesData, setVoicesData] = useState<Birdvoices>();
     useEffect(() => {
-        fetch('reversproxy.php?query=Keel-billed+Toucan', {
+        fetch('reverseproxy/?query=Keel-billed+Toucan', {
                 method: 'GET',
                 mode: 'no-cors',
                 headers: {
